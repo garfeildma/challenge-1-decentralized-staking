@@ -24,7 +24,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "moonbaseAlpha";
 
 const mainnetGwei = 21;
 
@@ -230,6 +230,14 @@ module.exports = {
       url: "https://api.harmony.one",
       gasPrice: 1000000000,
       chainId: 1666600000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+    moonbaseAlpha: {
+      url: "https://moonbeam-alpha.api.onfinality.io/public",
+      gasPrice: 1000000000,
+      chainId: 1287,
       accounts: {
         mnemonic: mnemonic(),
       },

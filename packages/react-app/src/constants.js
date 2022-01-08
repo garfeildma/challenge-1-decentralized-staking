@@ -183,6 +183,14 @@ export const NETWORKS = {
     rpcUrl: `https://api.harmony.one`,
     gasPrice: 1000000000,
   },
+  moonbaseAlpha: {
+    name: "Moonbase Alpha",
+    color: "#00b0ef",
+    blockExplorer: "https://moonbase-blockscout.testnet.moonbeam.network/",
+    rpcUrl: "https://moonbeam-alpha.api.onfinality.io/public",
+    gasPrice: 1000000000,
+    chainId: 1287,
+  },
 };
 
 export const NETWORK = chainId => {
